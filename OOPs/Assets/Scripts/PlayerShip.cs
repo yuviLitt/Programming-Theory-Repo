@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // INHERITANCE
 public class PlayerShip : Ship
@@ -8,34 +9,59 @@ public class PlayerShip : Ship
 	private float horizontalInput;
 	private float verticalInput;
 
-    //web gl screen limits
-    //config from editor
-    [SerializeField] private float xLim; // = 6.0f;
-	[SerializeField] private float yLim; // = 3.5f;
+	//config from editor
+	[SerializeField] private GameObject originalShoot;
+	[SerializeField] private float xLim; // = 6.0f; ////web gl screen limits
+									   
+
+	// ENCAPSULATION
+	public GameObject p_originalShoot { get; private set; }
 
 
-    void Update()
-    {
+	void Update()
+	{
+		
+		//if (gameManager.isPlaying)
+		//{
 
-        //if (gameManager.isPlaying)
-        //{
+		//Manage shooting
+		Shoot();
 
-        //Manage shooting
-        Shoot();
-
-        //Manage movement
-        Move();
+		//Manage movement
+		Move();// ABSTRACTION
 
         //Limit player to the screen
-        PositionControl();
+        PositionControl();// ABSTRACTION
         //}
 
     }
 
+	//shoot with space bar
+	private void Shoot()
+	{
 
-    // POLYMORPHISM:
-    //move with arrows/asdf
-    protected override void Move() {
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			Vector3 projectileSpawnPosition = new Vector3(gameObject.transform.position.x,
+				gameObject.transform.position.y + 2.0f,
+				gameObject.transform.position.z);
+
+			//Launch a projectile from the player
+			Instantiate(p_originalShoot, projectileSpawnPosition, gameObject.transform.rotation);
+		}
+	}
+
+	// POLYMORPHISM
+	protected override void Start()
+	{
+		//Debug.Log("start player ship");
+		base.Start();
+		p_originalShoot = originalShoot;
+	}
+
+	//move with arrows/asdf
+	protected override void Move()
+	{
 
 		horizontalInput = Input.GetAxis("Horizontal");
 		verticalInput = Input.GetAxis("Vertical");
@@ -44,38 +70,58 @@ public class PlayerShip : Ship
 		transform.Translate(Vector3.up * verticalInput * Time.deltaTime * base.p_speed);
 	}
 
-    //shoot with space bar
-    protected override void Shoot(){
 
-		if (Input.GetKeyDown(KeyCode.Space)){
-			Vector3 projectileSpawnPosition = new Vector3(gameObject.transform.position.x,
-				gameObject.transform.position.y + 3.0f,
-				gameObject.transform.position.z);
+	//control that player doesn't leave the screen
+	protected override void PositionControl()
+	{
 
-			//Launch a projectile from the player
-			Instantiate(base.p_originalShoot, projectileSpawnPosition, base.p_originalShoot.transform.rotation);
+		//control limits for X
+		if (transform.position.x > xLim)
+		{
+			transform.position = new Vector3(xLim, transform.position.y, transform.position.z);
 		}
+		else if (transform.position.x < -xLim)
+		{
+			transform.position = new Vector3(-xLim, transform.position.y, transform.position.z);
+		}
+
+		//control limits for Y
+		if (transform.position.y > yLim)
+		{
+			transform.position = new Vector3(transform.position.x, yLim, transform.position.z);
+		}
+		else if (transform.position.y < -yLim)
+		{
+			transform.position = new Vector3(transform.position.x, -yLim, transform.position.z);
+		}
+
 	}
 
-    //control that player doesn't leave the screen
-    protected override void PositionControl(){
+	protected override void ReceiveDamage(int damage)
+	{
+		p_life -= damage;
+		if (p_life <= 0)
+		{
+			Debug.Log("GAME OVER");
+			Destroy(gameObject, 3);
+            //finish demo
+            //go to some menu-scene
+            //SceneManager.LoadScene(0-2);?
+        }
+	}
 
-        //control limits for X
-        if (transform.position.x > xLim){
-            transform.position = new Vector3(xLim, transform.position.y, transform.position.z);
-        }
-        else if (transform.position.x < -xLim){
-            transform.position = new Vector3(-xLim, transform.position.y, transform.position.z);
-        }
 
-        //control limits for Y
-        if (transform.position.y > yLim){
-            transform.position = new Vector3(transform.position.x, yLim, transform.position.z );
-        }
-        else if (transform.position.y < -yLim){
-            transform.position = new Vector3(transform.position.x, -yLim, transform.position.z );
-        }
+	//Manage COLLISIONS
+	private void OnTriggerEnter(Collider other)
+	{
+		//melee collisions between ships
+		if (other.gameObject.CompareTag("Enemy")){
+			//Debug.Log("Melee collision: " + gameObject.tag + " /other " + other.gameObject.tag);
+			var otherShip = other.gameObject.GetComponent<EnemyShip>();
+			//damage from other.gameObject to gameobject
+			ReceiveDamage(otherShip.p_meleeDamage); // ABSTRACTION
+		}
 
-    }
+	}
 
 }

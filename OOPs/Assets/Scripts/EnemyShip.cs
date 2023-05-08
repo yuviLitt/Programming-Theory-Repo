@@ -5,62 +5,67 @@ using UnityEngine;
 // INHERITANCE
 public class EnemyShip : Ship
 {
-    // ENCAPSULATION
-    [SerializeField] private int scoreValue;
-    public int p_scoreValue { get; private set; }
+	// ENCAPSULATION
+	[SerializeField] private int scoreValue;
+	public int p_scoreValue { get; private set; }
 
-    [SerializeField] private float yLim; //6.5
-
-
-    private void Start(){
-        //Debug.Log("Start enemy ship");
-        p_scoreValue = scoreValue;
-    }
-
-    void Update()
+	// POLYMORPHISM
+	protected override void Start()
 	{
+		//Debug.Log("start enemy ship");
+		base.Start();
+		p_scoreValue = scoreValue;
+	}
 
+	protected override void ReceiveDamage(int damage)
+	{
+		p_life -= damage;
+		if (p_life <= 0)
+		{
+			Debug.Log("Ship is done");
+			//sum scoreValue for the player total score
+			Destroy(gameObject);
+		}
+	}
+
+	void Update()
+	{
+		
 		//if (gameManager.isPlaying)
 		//{
 
-		//Manage shooting
-		Shoot();
-
 		//Manage movement
-		Move();
+		Move();// ABSTRACTION
 
-		//Limit player to the screen
-		PositionControl();
-		//}
+        //Limit player to the screen
+        PositionControl();// ABSTRACTION
+        //}
 
-	}
-
-	//POLYMORPHISM:
-	//move forward
-	protected override void Move(){
-        transform.Translate(Vector3.up * Time.deltaTime * base.p_speed);
     }
 
-	//shoot automatic (if it has shoot)
-	protected override void Shoot(){
-
-		if (base.p_originalShoot)
+	//Manage COLLISIONS
+	private void OnTriggerEnter(Collider other)
+	{
+		//enemy collisions with shoots
+		if (other.gameObject.CompareTag("Projectil"))
 		{
-			Vector3 projectileSpawnPosition = new Vector3(gameObject.transform.position.x,
-				gameObject.transform.position.y + 4.0f,
-				gameObject.transform.position.z);
-
-			//Launch a projectile from the ship
-			Instantiate(base.p_originalShoot, projectileSpawnPosition, base.p_originalShoot.transform.rotation);
-		}
-	}
-
-	//control that enemy is not visible anymore
-	protected override void PositionControl(){
-		//it goes from top to bottom - FUT maybe other paths
-		if (transform.position.y < -yLim){
-			Destroy(gameObject);
+			//Debug.Log("Enemy: " + gameObject.name + " was shot with Projectil");
+			var projectil = other.gameObject.GetComponent<MovingThing>();
+			//damage from other.gameObject to gameobject
+			ReceiveDamage(projectil.p_meleeDamage); // ABSTRACTION
+			Destroy(other.gameObject); //destroy shoot
 		}
 
+		//melee collisions between ships
+		else if(other.gameObject.CompareTag("Player"))
+
+		{
+			//Debug.Log("Melee collision: " + gameObject.tag + " /other " + other.gameObject.tag);
+			var otherShip = other.gameObject.GetComponent<PlayerShip>();
+			//damage from other.gameObject to gameobject
+			ReceiveDamage(otherShip.p_meleeDamage); // ABSTRACTION
+		}
+
 	}
+
 }
