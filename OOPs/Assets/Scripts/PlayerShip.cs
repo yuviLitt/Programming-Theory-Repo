@@ -33,7 +33,7 @@ public class PlayerShip : Ship
     }
 
 
-    //POLYMORPHISM:
+    // POLYMORPHISM:
     //move with arrows/asdf
     protected override void Move() {
 
@@ -49,8 +49,8 @@ public class PlayerShip : Ship
 
 		if (Input.GetKeyDown(KeyCode.Space)){
 			Vector3 projectileSpawnPosition = new Vector3(gameObject.transform.position.x,
-				gameObject.transform.position.y,
-				gameObject.transform.position.z + 3.0f);
+				gameObject.transform.position.y + 3.0f,
+				gameObject.transform.position.z);
 
 			//Launch a projectile from the player
 			Instantiate(base.p_originalShoot, projectileSpawnPosition, base.p_originalShoot.transform.rotation);

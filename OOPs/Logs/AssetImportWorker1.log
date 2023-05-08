@@ -1,0 +1,1122 @@
+Unity Editor version:    2021.3.13f1 (9e7d58001ecf)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 10.15.7 (Build 19H2026)
+Darwin version:          19.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.13f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+52530
+Successfully changed project path to: /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs
+/Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 311.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.13f1 (9e7d58001ecf)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.13f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Color LCD preferred device: Intel(R) HD Graphics 615 (low power)
+Metal devices available: 1
+0: Intel(R) HD Graphics 615 (low power)
+Using device Intel(R) HD Graphics 615 (low power)
+Initializing Metal device caps: Intel(R) HD Graphics 615
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.13f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.13f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.13f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56157
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.13f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.13f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.048814 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 138.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.217 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2218ms)
+		BeginReloadAssembly (191ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1332ms)
+			LoadAssemblies (193ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (386ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (103ms)
+			SetupLoadedEditorAssemblies (617ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (139ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (303ms)
+				ProcessInitializeOnLoadMethodAttributes (152ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005792 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.203 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3205ms)
+		BeginReloadAssembly (346ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (33ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (81ms)
+		EndReloadAssembly (2443ms)
+			LoadAssemblies (196ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1056ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (175ms)
+			SetupLoadedEditorAssemblies (917ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (198ms)
+				ProcessInitializeOnLoadAttributes (632ms)
+				ProcessInitializeOnLoadMethodAttributes (67ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.13f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3363 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (44.1 KB). Loaded Objects now: 3826.
+Memory consumption went from 235.5 MB to 235.5 MB.
+Total: 7.434460 ms (FindLiveObjects: 0.430043 ms CreateObjectMapping: 0.319158 ms MarkObjects: 6.488194 ms  DeleteObjects: 0.195381 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005445 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.371 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4373ms)
+		BeginReloadAssembly (601ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (243ms)
+		EndReloadAssembly (3381ms)
+			LoadAssemblies (311ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1175ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (152ms)
+			SetupLoadedEditorAssemblies (1598ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (46ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (176ms)
+				ProcessInitializeOnLoadAttributes (1274ms)
+				ProcessInitializeOnLoadMethodAttributes (92ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3344 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (45.5 KB). Loaded Objects now: 3829.
+Memory consumption went from 239.0 MB to 238.9 MB.
+Total: 5.538687 ms (FindLiveObjects: 0.385840 ms CreateObjectMapping: 0.264612 ms MarkObjects: 4.748100 ms  DeleteObjects: 0.138463 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 43548.477257 seconds.
+  path: 
+  artifactKey: Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000079 seconds  code(3) message(Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f')
+  ERROR: Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f'
+========================================================================
+Received Import Request.
+  Time since last request: 113.777832 seconds.
+  path: 
+  artifactKey: Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000115 seconds  code(3) message(Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f')
+  ERROR: Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005872 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.204 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2206ms)
+		BeginReloadAssembly (289ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (104ms)
+		EndReloadAssembly (1652ms)
+			LoadAssemblies (154ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (513ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (843ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (617ms)
+				ProcessInitializeOnLoadMethodAttributes (98ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3344 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (45.4 KB). Loaded Objects now: 3832.
+Memory consumption went from 238.0 MB to 237.9 MB.
+Total: 3.843815 ms (FindLiveObjects: 0.309459 ms CreateObjectMapping: 0.240132 ms MarkObjects: 3.195266 ms  DeleteObjects: 0.097800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 15.179181 seconds.
+  path: 
+  artifactKey: Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000057 seconds  code(3) message(Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f')
+  ERROR: Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f'
+========================================================================
+Received Import Request.
+  Time since last request: 5.061441 seconds.
+  path: 
+  artifactKey: Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000142 seconds  code(3) message(Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f')
+  ERROR: Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003509 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.755 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1756ms)
+		BeginReloadAssembly (252ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (112ms)
+		EndReloadAssembly (1344ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (459ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (602ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (404ms)
+				ProcessInitializeOnLoadMethodAttributes (74ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3344 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (45.5 KB). Loaded Objects now: 3835.
+Memory consumption went from 238.2 MB to 238.1 MB.
+Total: 4.378209 ms (FindLiveObjects: 0.321020 ms CreateObjectMapping: 0.227394 ms MarkObjects: 3.739683 ms  DeleteObjects: 0.088724 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11.097427 seconds.
+  path: 
+  artifactKey: Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000067 seconds  code(3) message(Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f')
+  ERROR: Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003396 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.619 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1620ms)
+		BeginReloadAssembly (229ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (111ms)
+		EndReloadAssembly (1242ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (436ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (568ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (415ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3344 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (45.4 KB). Loaded Objects now: 3838.
+Memory consumption went from 238.4 MB to 238.4 MB.
+Total: 3.631232 ms (FindLiveObjects: 0.320987 ms CreateObjectMapping: 0.184380 ms MarkObjects: 3.014608 ms  DeleteObjects: 0.110142 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 370.513902 seconds.
+  path: 
+  artifactKey: Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000099 seconds  code(3) message(Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f')
+  ERROR: Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f'
+========================================================================
+Received Import Request.
+  Time since last request: 21.380103 seconds.
+  path: 
+  artifactKey: Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000107 seconds  code(3) message(Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f')
+  ERROR: Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003432 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.677 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2679ms)
+		BeginReloadAssembly (294ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (18ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (132ms)
+		EndReloadAssembly (2156ms)
+			LoadAssemblies (132ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (585ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (201ms)
+			SetupLoadedEditorAssemblies (1020ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (73ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (233ms)
+				ProcessInitializeOnLoadAttributes (644ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3344 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (45.4 KB). Loaded Objects now: 3841.
+Memory consumption went from 238.6 MB to 238.6 MB.
+Total: 5.532790 ms (FindLiveObjects: 0.382867 ms CreateObjectMapping: 0.275645 ms MarkObjects: 4.754539 ms  DeleteObjects: 0.118076 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 15.851768 seconds.
+  path: 
+  artifactKey: Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000088 seconds  code(3) message(Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f')
+  ERROR: Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f'
+========================================================================
+Received Import Request.
+  Time since last request: 8.316363 seconds.
+  path: 
+  artifactKey: Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000075 seconds  code(3) message(Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f')
+  ERROR: Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004484 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.771 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1773ms)
+		BeginReloadAssembly (307ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (144ms)
+		EndReloadAssembly (1285ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (489ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (536ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (384ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3344 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (45.4 KB). Loaded Objects now: 3844.
+Memory consumption went from 238.8 MB to 238.8 MB.
+Total: 3.715444 ms (FindLiveObjects: 0.376251 ms CreateObjectMapping: 0.195322 ms MarkObjects: 3.046797 ms  DeleteObjects: 0.096035 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 10.730438 seconds.
+  path: 
+  artifactKey: Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000059 seconds  code(3) message(Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f')
+  ERROR: Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f'
+========================================================================
+Received Import Request.
+  Time since last request: 11.193538 seconds.
+  path: 
+  artifactKey: Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000117 seconds  code(3) message(Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f')
+  ERROR: Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003811 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.805 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1807ms)
+		BeginReloadAssembly (244ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (101ms)
+		EndReloadAssembly (1386ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (513ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (609ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (433ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3344 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (45.5 KB). Loaded Objects now: 3847.
+Memory consumption went from 239.0 MB to 239.0 MB.
+Total: 5.752990 ms (FindLiveObjects: 0.466906 ms CreateObjectMapping: 0.384020 ms MarkObjects: 4.808961 ms  DeleteObjects: 0.091484 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11.203746 seconds.
+  path: 
+  artifactKey: Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(feb1a420f678449a4ba4614d4fa0070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000059 seconds  code(3) message(Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f')
+  ERROR: Unknown asset with GUID 'feb1a420f678449a4ba4614d4fa0070f'
+========================================================================
+Received Import Request.
+  Time since last request: 16.575157 seconds.
+  path: 
+  artifactKey: Guid(8346a4d4a637f41c4adf3c26be59384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(8346a4d4a637f41c4adf3c26be59384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000105 seconds  code(3) message(Unknown asset with GUID '8346a4d4a637f41c4adf3c26be59384e')
+  ERROR: Unknown asset with GUID '8346a4d4a637f41c4adf3c26be59384e'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: 
+  artifactKey: Guid(8655aa55240db449494013047b2b0ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(8655aa55240db449494013047b2b0ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000170 seconds  code(3) message(Unknown asset with GUID '8655aa55240db449494013047b2b0ecc')
+  ERROR: Unknown asset with GUID '8655aa55240db449494013047b2b0ecc'
+========================================================================
+Received Import Request.
+  Time since last request: 15.524484 seconds.
+  path: 
+  artifactKey: Guid(8346a4d4a637f41c4adf3c26be59384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(8346a4d4a637f41c4adf3c26be59384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000103 seconds  code(3) message(Unknown asset with GUID '8346a4d4a637f41c4adf3c26be59384e')
+  ERROR: Unknown asset with GUID '8346a4d4a637f41c4adf3c26be59384e'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: 
+  artifactKey: Guid(8655aa55240db449494013047b2b0ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(8655aa55240db449494013047b2b0ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000080 seconds  code(3) message(Unknown asset with GUID '8655aa55240db449494013047b2b0ecc')
+  ERROR: Unknown asset with GUID '8655aa55240db449494013047b2b0ecc'
+========================================================================
+Received Import Request.
+  Time since last request: 83.500069 seconds.
+  path: 
+  artifactKey: Guid(8346a4d4a637f41c4adf3c26be59384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(8346a4d4a637f41c4adf3c26be59384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000135 seconds  code(3) message(Unknown asset with GUID '8346a4d4a637f41c4adf3c26be59384e')
+  ERROR: Unknown asset with GUID '8346a4d4a637f41c4adf3c26be59384e'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: 
+  artifactKey: Guid(8655aa55240db449494013047b2b0ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(8655aa55240db449494013047b2b0ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000432 seconds  code(3) message(Unknown asset with GUID '8655aa55240db449494013047b2b0ecc')
+  ERROR: Unknown asset with GUID '8655aa55240db449494013047b2b0ecc'
+========================================================================
+Received Import Request.
+  Time since last request: 1.804378 seconds.
+  path: 
+  artifactKey: Guid(7064fe36e49404d2985216dc90e9160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(7064fe36e49404d2985216dc90e9160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000106 seconds  code(3) message(Unknown asset with GUID '7064fe36e49404d2985216dc90e9160d')
+  ERROR: Unknown asset with GUID '7064fe36e49404d2985216dc90e9160d'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: 
+  artifactKey: Guid(2ecd0c517bf024fc9b66c98e1f5f1411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2ecd0c517bf024fc9b66c98e1f5f1411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000151 seconds  code(3) message(Unknown asset with GUID '2ecd0c517bf024fc9b66c98e1f5f1411')
+  ERROR: Unknown asset with GUID '2ecd0c517bf024fc9b66c98e1f5f1411'
+========================================================================
+Received Import Request.
+  Time since last request: 6.722051 seconds.
+  path: 
+  artifactKey: Guid(7064fe36e49404d2985216dc90e9160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(7064fe36e49404d2985216dc90e9160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000115 seconds  code(3) message(Unknown asset with GUID '7064fe36e49404d2985216dc90e9160d')
+  ERROR: Unknown asset with GUID '7064fe36e49404d2985216dc90e9160d'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: 
+  artifactKey: Guid(2ecd0c517bf024fc9b66c98e1f5f1411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2ecd0c517bf024fc9b66c98e1f5f1411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000084 seconds  code(3) message(Unknown asset with GUID '2ecd0c517bf024fc9b66c98e1f5f1411')
+  ERROR: Unknown asset with GUID '2ecd0c517bf024fc9b66c98e1f5f1411'
+========================================================================
+Received Import Request.
+  Time since last request: 92.585262 seconds.
+  path: 
+  artifactKey: Guid(7064fe36e49404d2985216dc90e9160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(7064fe36e49404d2985216dc90e9160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000479 seconds  code(3) message(Unknown asset with GUID '7064fe36e49404d2985216dc90e9160d')
+  ERROR: Unknown asset with GUID '7064fe36e49404d2985216dc90e9160d'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: 
+  artifactKey: Guid(2ecd0c517bf024fc9b66c98e1f5f1411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2ecd0c517bf024fc9b66c98e1f5f1411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000166 seconds  code(3) message(Unknown asset with GUID '2ecd0c517bf024fc9b66c98e1f5f1411')
+  ERROR: Unknown asset with GUID '2ecd0c517bf024fc9b66c98e1f5f1411'
+========================================================================
+Received Import Request.
+  Time since last request: 12.705216 seconds.
+  path: 
+  artifactKey: Guid(7064fe36e49404d2985216dc90e9160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(7064fe36e49404d2985216dc90e9160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000160 seconds  code(3) message(Unknown asset with GUID '7064fe36e49404d2985216dc90e9160d')
+  ERROR: Unknown asset with GUID '7064fe36e49404d2985216dc90e9160d'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: 
+  artifactKey: Guid(2ecd0c517bf024fc9b66c98e1f5f1411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2ecd0c517bf024fc9b66c98e1f5f1411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000099 seconds  code(3) message(Unknown asset with GUID '2ecd0c517bf024fc9b66c98e1f5f1411')
+  ERROR: Unknown asset with GUID '2ecd0c517bf024fc9b66c98e1f5f1411'
+========================================================================
+Received Import Request.
+  Time since last request: 6.314235 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000137 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'
+========================================================================
+Received Import Request.
+  Time since last request: 7.387564 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000117 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'
+========================================================================
+Received Import Request.
+  Time since last request: 33.620689 seconds.
+  path: 
+  artifactKey: Guid(8346a4d4a637f41c4adf3c26be59384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(8346a4d4a637f41c4adf3c26be59384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000102 seconds  code(3) message(Unknown asset with GUID '8346a4d4a637f41c4adf3c26be59384e')
+  ERROR: Unknown asset with GUID '8346a4d4a637f41c4adf3c26be59384e'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: 
+  artifactKey: Guid(8655aa55240db449494013047b2b0ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(8655aa55240db449494013047b2b0ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000102 seconds  code(3) message(Unknown asset with GUID '8655aa55240db449494013047b2b0ecc')
+  ERROR: Unknown asset with GUID '8655aa55240db449494013047b2b0ecc'
+========================================================================
+Received Import Request.
+  Time since last request: 86.934012 seconds.
+  path: 
+  artifactKey: Guid(7064fe36e49404d2985216dc90e9160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(7064fe36e49404d2985216dc90e9160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000107 seconds  code(3) message(Unknown asset with GUID '7064fe36e49404d2985216dc90e9160d')
+  ERROR: Unknown asset with GUID '7064fe36e49404d2985216dc90e9160d'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: 
+  artifactKey: Guid(2ecd0c517bf024fc9b66c98e1f5f1411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2ecd0c517bf024fc9b66c98e1f5f1411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000129 seconds  code(3) message(Unknown asset with GUID '2ecd0c517bf024fc9b66c98e1f5f1411')
+  ERROR: Unknown asset with GUID '2ecd0c517bf024fc9b66c98e1f5f1411'
+========================================================================
+Received Import Request.
+  Time since last request: 37.865539 seconds.
+  path: 
+  artifactKey: Guid(7064fe36e49404d2985216dc90e9160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(7064fe36e49404d2985216dc90e9160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000096 seconds  code(3) message(Unknown asset with GUID '7064fe36e49404d2985216dc90e9160d')
+  ERROR: Unknown asset with GUID '7064fe36e49404d2985216dc90e9160d'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: 
+  artifactKey: Guid(2ecd0c517bf024fc9b66c98e1f5f1411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2ecd0c517bf024fc9b66c98e1f5f1411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000100 seconds  code(3) message(Unknown asset with GUID '2ecd0c517bf024fc9b66c98e1f5f1411')
+  ERROR: Unknown asset with GUID '2ecd0c517bf024fc9b66c98e1f5f1411'
+========================================================================
+Received Import Request.
+  Time since last request: 3.180271 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000097 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'
+========================================================================
+Received Import Request.
+  Time since last request: 5.354676 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000100 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: 
+  artifactKey: Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000097 seconds  code(3) message(Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a')
+  ERROR: Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a'
+========================================================================
+Received Import Request.
+  Time since last request: 6.647489 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000088 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: 
+  artifactKey: Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000074 seconds  code(3) message(Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a')
+  ERROR: Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a'
+========================================================================
+Received Import Request.
+  Time since last request: 2.135239 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Dark.psd
+  artifactKey: Guid(fb5730e24283d0c489e5c7d0bee023d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Dark.psd using Guid(fb5730e24283d0c489e5c7d0bee023d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff5b772ac5289b85151c153b306a5c7') in 2.611406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Light.psd
+  artifactKey: Guid(e3b0f810fdea84e40ab4ba20f256f7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Light.psd using Guid(e3b0f810fdea84e40ab4ba20f256f7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b17ef5254c7c3c625d8aa2a84c3ffd62') in 0.004420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-light.png
+  artifactKey: Guid(9c0e0aeb2cb19c640a4d430e258e7336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-light.png using Guid(9c0e0aeb2cb19c640a4d430e258e7336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dfd8b5490d225af066f74ccb58059e5') in 0.409132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: 
+  artifactKey: Guid(8346a4d4a637f41c4adf3c26be59384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(8346a4d4a637f41c4adf3c26be59384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000089 seconds  code(3) message(Unknown asset with GUID '8346a4d4a637f41c4adf3c26be59384e')
+  ERROR: Unknown asset with GUID '8346a4d4a637f41c4adf3c26be59384e'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-light@2x.png
+  artifactKey: Guid(d84f7eb154b674f46b833c51f844277e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-light@2x.png using Guid(d84f7eb154b674f46b833c51f844277e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69df4112b8c7c867d9750dbcc5101546') in 0.004618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-dark@2x.png
+  artifactKey: Guid(de4c62a7de5c61a41b5b0029b339f373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-dark@2x.png using Guid(de4c62a7de5c61a41b5b0029b339f373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b9e8949868d90e6cf01face7ddbbd9') in 0.005480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/status-error-dark.png
+  artifactKey: Guid(8f169193df3d51042a705fa81fc46e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/status-error-dark.png using Guid(8f169193df3d51042a705fa81fc46e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c77ec289cc2de4ecb7e6c80d350b5b15') in 0.006621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-dark.png
+  artifactKey: Guid(849b7119dad13a24397add67a7f78510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-dark.png using Guid(849b7119dad13a24397add67a7f78510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58026298d9e4968d4e29b68ebd1f8238') in 0.006191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: 
+  artifactKey: Guid(8655aa55240db449494013047b2b0ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(8655aa55240db449494013047b2b0ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000101 seconds  code(3) message(Unknown asset with GUID '8655aa55240db449494013047b2b0ecc')
+  ERROR: Unknown asset with GUID '8655aa55240db449494013047b2b0ecc'
+========================================================================
+Received Import Request.
+  Time since last request: 76.785676 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000168 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'
+========================================================================
+Received Import Request.
+  Time since last request: 46.567013 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Dark.psd
+  artifactKey: Guid(fb5730e24283d0c489e5c7d0bee023d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Dark.psd using Guid(fb5730e24283d0c489e5c7d0bee023d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff5b772ac5289b85151c153b306a5c7') in 0.003725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Light.psd
+  artifactKey: Guid(e3b0f810fdea84e40ab4ba20f256f7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Light.psd using Guid(e3b0f810fdea84e40ab4ba20f256f7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b17ef5254c7c3c625d8aa2a84c3ffd62') in 0.002275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-light.png
+  artifactKey: Guid(9c0e0aeb2cb19c640a4d430e258e7336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-light.png using Guid(9c0e0aeb2cb19c640a4d430e258e7336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dfd8b5490d225af066f74ccb58059e5') in 0.001802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: 
+  artifactKey: Guid(8346a4d4a637f41c4adf3c26be59384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(8346a4d4a637f41c4adf3c26be59384e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000070 seconds  code(3) message(Unknown asset with GUID '8346a4d4a637f41c4adf3c26be59384e')
+  ERROR: Unknown asset with GUID '8346a4d4a637f41c4adf3c26be59384e'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-light@2x.png
+  artifactKey: Guid(d84f7eb154b674f46b833c51f844277e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-light@2x.png using Guid(d84f7eb154b674f46b833c51f844277e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69df4112b8c7c867d9750dbcc5101546') in 0.001906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-dark@2x.png
+  artifactKey: Guid(de4c62a7de5c61a41b5b0029b339f373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-dark@2x.png using Guid(de4c62a7de5c61a41b5b0029b339f373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b9e8949868d90e6cf01face7ddbbd9') in 0.001790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/status-error-dark.png
+  artifactKey: Guid(8f169193df3d51042a705fa81fc46e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/status-error-dark.png using Guid(8f169193df3d51042a705fa81fc46e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c77ec289cc2de4ecb7e6c80d350b5b15') in 0.001997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-dark.png
+  artifactKey: Guid(849b7119dad13a24397add67a7f78510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/show-dark.png using Guid(849b7119dad13a24397add67a7f78510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58026298d9e4968d4e29b68ebd1f8238') in 0.001706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: 
+  artifactKey: Guid(8655aa55240db449494013047b2b0ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(8655aa55240db449494013047b2b0ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000082 seconds  code(3) message(Unknown asset with GUID '8655aa55240db449494013047b2b0ecc')
+  ERROR: Unknown asset with GUID '8655aa55240db449494013047b2b0ecc'
+========================================================================
+Received Import Request.
+  Time since last request: 20.656728 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000094 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'
+========================================================================
+Received Import Request.
+  Time since last request: 3.372673 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000092 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: 
+  artifactKey: Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000090 seconds  code(3) message(Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a')
+  ERROR: Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a'
+========================================================================
+Received Import Request.
+  Time since last request: 198.376042 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000161 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000488 seconds.
+  path: 
+  artifactKey: Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000153 seconds  code(3) message(Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a')
+  ERROR: Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a'
+========================================================================
+Received Import Request.
+  Time since last request: 58.263199 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000103 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: 
+  artifactKey: Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000079 seconds  code(3) message(Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a')
+  ERROR: Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a'
+========================================================================
+Received Import Request.
+  Time since last request: 17.413269 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000095 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: 
+  artifactKey: Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000099 seconds  code(3) message(Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a')
+  ERROR: Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a'
+========================================================================
+Received Import Request.
+  Time since last request: 13.158931 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000107 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: 
+  artifactKey: Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000123 seconds  code(3) message(Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a')
+  ERROR: Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a'
+========================================================================
+Received Import Request.
+  Time since last request: 83.355083 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000104 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: 
+  artifactKey: Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000091 seconds  code(3) message(Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a')
+  ERROR: Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003619 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/mallorn/Documents/TRABAJOS/UNITY/tutos Junior Programmer-Create with code/Programming-Theory-Repo/OOPs/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.211 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2212ms)
+		BeginReloadAssembly (257ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (105ms)
+		EndReloadAssembly (1771ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (533ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (135ms)
+			SetupLoadedEditorAssemblies (818ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (40ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (158ms)
+				ProcessInitializeOnLoadAttributes (566ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3344 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (45.3 KB). Loaded Objects now: 3850.
+Memory consumption went from 247.7 MB to 247.6 MB.
+Total: 4.042290 ms (FindLiveObjects: 0.333334 ms CreateObjectMapping: 0.254762 ms MarkObjects: 3.363597 ms  DeleteObjects: 0.089256 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 12.842386 seconds.
+  path: 
+  artifactKey: Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(090c41ac593924602b9534f2f4c1e84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000089 seconds  code(3) message(Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a')
+  ERROR: Unknown asset with GUID '090c41ac593924602b9534f2f4c1e84a'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: 
+  artifactKey: Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(cbe1187966922416b96242c9c6b729dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000172 seconds  code(3) message(Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc')
+  ERROR: Unknown asset with GUID 'cbe1187966922416b96242c9c6b729dc'

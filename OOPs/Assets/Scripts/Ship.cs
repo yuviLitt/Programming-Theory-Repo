@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VFX;
 
 public abstract class Ship : MonoBehaviour
 {
@@ -17,7 +16,6 @@ public abstract class Ship : MonoBehaviour
 	[SerializeField] private GameObject originalShoot;
 
 	// ENCAPSULATION
-	
 	//not change during game
 	//redundant?
 	public int p_maxLife { get; private set; }
@@ -50,14 +48,11 @@ public abstract class Ship : MonoBehaviour
 	protected abstract void Shoot();
 	protected abstract void PositionControl();
 
-	//public int valueScore; //value of enemy 4 the score TO ENEMY
-
-	private void Start(){
-		InitValues();
+	private void Awake(){
+        //Debug.Log("awake ship");
+        // ABSTRACTION
+        InitValues();
 		ResetStatsShip();
-
-		//Debug.Log("Start Ship m_shield: " + m_shield);
-		//Debug.Log("Start Ship m_life: " + m_life);
 	}
 
 	//only time they are set
@@ -87,21 +82,23 @@ public abstract class Ship : MonoBehaviour
 		{
 
 			Debug.Log("Ship " + gameObject.name + " was shot with Projectil");
-			//ReceiveDamage(projectil.damage); //damage from other.gameObject to gameobject
+            // ABSTRACTION
+            //ReceiveDamage(projectil.damage); //damage from other.gameObject to gameobject
 
-		}
+        }
 
-		//else if for bonuses - other.gameObject.CompareTag("Bonus") - FUT
+        //else if for bonuses - other.gameObject.CompareTag("Bonus") - FUT
 
-		//melee collisions between ships
-		else
+        //melee collisions between ships
+        else
 		{
 			Debug.Log("Melee collision: " + gameObject.tag + " /other " + other.gameObject.tag);
-			//ReceiveDamage(shipOther.meleeDamage); //damage from other.gameObject to gameobject
-		}
+            // ABSTRACTION
+            //ReceiveDamage(shipOther.meleeDamage); //damage from other.gameObject to gameobject
+        }
 
-	
-	}
+
+    }
 
 	private void ReceiveDamage(int damage){
 	}
