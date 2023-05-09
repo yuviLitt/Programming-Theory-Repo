@@ -337,7 +337,7 @@
 "Assets/Scripts/PlayerShip.cs"
 "Assets/Scripts/Ship.cs"
 "Assets/Scripts/StartButton.cs"
-"Assets/Scripts/Test.cs"
+"Assets/Scripts/UIStatsController.cs"
 -langversion:9.0
 
 /deterministic

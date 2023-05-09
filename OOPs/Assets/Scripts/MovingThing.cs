@@ -9,56 +9,58 @@ public class MovingThing : MonoBehaviour
 	//config in editor
 	[SerializeField] protected int meleeDamage;
 	[SerializeField] protected float speed;
-    [SerializeField] protected float yLim; //8 aprox.
+	[SerializeField] protected float yLim; //8 aprox.
 
-    // ENCAPSULATION
-    //not change during game
+	// ENCAPSULATION
+	//not change during game
 	public int p_meleeDamage{ get; private set; }
 	public float p_speed{ get; private set; }
 
-
-    //methods to override
-    //move forward
-    protected virtual void Move() {
-        transform.Translate(Vector3.up * Time.deltaTime * p_speed);
-    }
-
-    //control that object is out of screen bounds
-    protected virtual void PositionControl() {
-        //it goes from top to bottom - FUT maybe other paths
-        if (transform.position.y < -yLim
-			|| transform.position.y > yLim){
-            Destroy(gameObject);
-        }
-    }
-
-    // ABSTRACTION
-    //only time they are set
-    protected void InitValues()
-    {
-        p_meleeDamage = meleeDamage;
-        p_speed = speed;
-    }
+	protected UIStatsController uiUpdater;
 
 
-    protected virtual void Start(){
-        //Debug.Log("start moving thing");
-        InitValues();
+	//methods to override
+	//move forward
+	protected virtual void Move() {
+		transform.Translate(Vector3.up * Time.deltaTime * p_speed);
 	}
 
-    void Update()
-    {
-        // ABSTRACTION
-        //if (gameManager.isPlaying)
-        //{
+	//control that object is out of screen bounds
+	protected virtual void PositionControl() {
+		//it goes from top to bottom - FUT maybe other paths
+		if (transform.position.y < -yLim
+			|| transform.position.y > yLim){
+			Destroy(gameObject);
+		}
+	}
 
-        //Manage movement
-        Move();
+	// ABSTRACTION
+	//only time they are set
+	protected void InitValues()
+	{
+		p_meleeDamage = meleeDamage;
+		p_speed = speed;
+	}
 
-        //Limit player to the screen
-        PositionControl();
-        //}
 
-    }
+	protected virtual void Start(){
+		//Debug.Log("start moving thing");
+		InitValues();
+
+		//to update ui and game
+		uiUpdater = GameObject.FindGameObjectWithTag("Stats").GetComponent<UIStatsController>();
+	}
+
+	void Update()
+	{
+		if (uiUpdater.isPlaying){
+			//Manage movement
+			Move(); // ABSTRACTION
+
+            //Limit player to the screen
+            PositionControl(); // ABSTRACTION
+        }
+
+	}
 
 }

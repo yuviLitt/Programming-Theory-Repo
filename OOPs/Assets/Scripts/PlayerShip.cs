@@ -11,7 +11,7 @@ public class PlayerShip : Ship
 
 	//config from editor
 	[SerializeField] private GameObject originalShoot;
-	[SerializeField] private float xLim; // = 6.0f; ////web gl screen limits
+	[SerializeField] private float xLim; //web gl screen limits
 									   
 
 	// ENCAPSULATION
@@ -20,19 +20,18 @@ public class PlayerShip : Ship
 
 	void Update()
 	{
-		
-		//if (gameManager.isPlaying)
-		//{
 
-		//Manage shooting
-		Shoot();
+        if (uiUpdater.isPlaying){
 
-		//Manage movement
-		Move();// ABSTRACTION
+			//Manage shooting
+			Shoot(); // ABSTRACTION
 
-        //Limit player to the screen
-        PositionControl();// ABSTRACTION
-        //}
+            //Manage movement
+            Move();// ABSTRACTION
+
+			//Limit player to the screen
+			PositionControl();// ABSTRACTION
+        }
 
     }
 
@@ -57,6 +56,9 @@ public class PlayerShip : Ship
 		//Debug.Log("start player ship");
 		base.Start();
 		p_originalShoot = originalShoot;
+
+		//init stats
+		uiUpdater.SetLife(p_maxLife);
 	}
 
 	//move with arrows/asdf
@@ -100,10 +102,14 @@ public class PlayerShip : Ship
 	protected override void ReceiveDamage(int damage)
 	{
 		p_life -= damage;
+		//update life in ui
+		uiUpdater.SetLife(p_life);
+
 		if (p_life <= 0)
 		{
 			Debug.Log("GAME OVER");
-			Destroy(gameObject, 3);
+			Destroy(gameObject, 1);
+			uiUpdater.SetGameOver();
             //finish demo
             //go to some menu-scene
             //SceneManager.LoadScene(0-2);?

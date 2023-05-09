@@ -110,6 +110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34b87849c45dc46d78f332b6da080c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meleeDamage: 5
+  meleeDamage: 2
   speed: 5
   yLim: 8

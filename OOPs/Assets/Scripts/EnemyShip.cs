@@ -17,29 +17,34 @@ public class EnemyShip : Ship
 		p_scoreValue = scoreValue;
 	}
 
-	protected override void ReceiveDamage(int damage)
+    // POLYMORPHISM
+    protected override void ReceiveDamage(int damage)
 	{
 		p_life -= damage;
 		if (p_life <= 0)
 		{
-			Debug.Log("Ship is done");
-			//sum scoreValue for the player total score
-			Destroy(gameObject);
-		}
+			//Debug.Log("Ship is done");
+			//sum scoreValue for the player total score, update ui
+			uiUpdater.SumScore(p_scoreValue);
+			uiUpdater.SumEnemies();
+
+            /* 4DEMO */
+            //Destroy(gameObject);
+            RespawnEnemy();
+
+        }
 	}
 
 	void Update()
 	{
-		
-		//if (gameManager.isPlaying)
-		//{
 
-		//Manage movement
-		Move();// ABSTRACTION
+        if (uiUpdater.isPlaying){
+			//Manage movement
+			Move();// ABSTRACTION
 
-        //Limit player to the screen
-        PositionControl();// ABSTRACTION
-        //}
+			//Limit player to the screen
+			PositionControl();// ABSTRACTION
+        }
 
     }
 
@@ -67,5 +72,15 @@ public class EnemyShip : Ship
 		}
 
 	}
+
+	/* 4DEMO */
+	private void RespawnEnemy() {
+        float xSpawnRange = 6.0f;
+        float ySpawnRange = 7.7f;
+
+		Vector3 posRespawn = new Vector3(Random.Range(-xSpawnRange, xSpawnRange), ySpawnRange, 0);
+
+		transform.position = posRespawn;
+    }
 
 }
