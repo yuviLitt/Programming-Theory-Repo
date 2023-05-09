@@ -8,32 +8,24 @@ public class Ship : MovingThing
 	//config in editor
 	[SerializeField] private int maxLife;
 	
-	// ENCAPSULATION
 	//not change during game
-	public int p_maxLife { get; private set; }
+	public int p_maxLife { get; private set; }// ENCAPSULATION
 
 	//change during game
-	//life
-	private int m_life;
+	private int m_life;// ENCAPSULATION
 	public int p_life
 	{
 		get { return m_life; }
 		set { m_life = value; }
 	}
 
-
-	// POLYMORPHISM
-	protected override void Start()
+	protected override void Start()// POLYMORPHISM
 	{
-		//Debug.Log("start ship");
 		base.Start();
 		p_maxLife = maxLife;
 		p_life = maxLife;
-
 	}
 
-
-	protected virtual void ReceiveDamage(int damage) { }
-	
+	protected virtual void ReceiveDamage(int damage) { }// POLYMORPHISM
 
 }

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 // INHERITANCE
 public class PlayerShip : Ship
@@ -13,32 +12,35 @@ public class PlayerShip : Ship
 	[SerializeField] private GameObject originalShoot;
 	[SerializeField] private float xLim; //web gl screen limits
 									   
+	public GameObject p_originalShoot { get; private set; }// ENCAPSULATION
 
-	// ENCAPSULATION
-	public GameObject p_originalShoot { get; private set; }
+	protected override void Start()// POLYMORPHISM
+	{
+		base.Start();
+		p_originalShoot = originalShoot;
 
+		//init stats
+		uiUpdater.SetLife(p_maxLife);// ABSTRACTION
+	}
 
 	void Update()
 	{
-
-        if (uiUpdater.isPlaying){
+		if (uiUpdater.isPlaying){
 
 			//Manage shooting
 			Shoot(); // ABSTRACTION
 
-            //Manage movement
-            Move();// ABSTRACTION
+			//Manage movement
+			Move();// ABSTRACTION
 
 			//Limit player to the screen
 			PositionControl();// ABSTRACTION
-        }
-
-    }
+		}
+	}
 
 	//shoot with space bar
 	private void Shoot()
 	{
-
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			Vector3 projectileSpawnPosition = new Vector3(gameObject.transform.position.x,
@@ -50,21 +52,9 @@ public class PlayerShip : Ship
 		}
 	}
 
-	// POLYMORPHISM
-	protected override void Start()
-	{
-		//Debug.Log("start player ship");
-		base.Start();
-		p_originalShoot = originalShoot;
-
-		//init stats
-		uiUpdater.SetLife(p_maxLife);
-	}
-
 	//move with arrows/asdf
-	protected override void Move()
+	protected override void Move()// POLYMORPHISM
 	{
-
 		horizontalInput = Input.GetAxis("Horizontal");
 		verticalInput = Input.GetAxis("Vertical");
 
@@ -74,9 +64,8 @@ public class PlayerShip : Ship
 
 
 	//control that player doesn't leave the screen
-	protected override void PositionControl()
+	protected override void PositionControl()// POLYMORPHISM
 	{
-
 		//control limits for X
 		if (transform.position.x > xLim)
 		{
@@ -96,35 +85,30 @@ public class PlayerShip : Ship
 		{
 			transform.position = new Vector3(transform.position.x, -yLim, transform.position.z);
 		}
-
 	}
 
-	protected override void ReceiveDamage(int damage)
+	protected override void ReceiveDamage(int damage) // POLYMORPHISM
 	{
 		p_life -= damage;
 		//update life in ui
-		uiUpdater.SetLife(p_life);
+		uiUpdater.SetLife(p_life);// ABSTRACTION
 
 		if (p_life <= 0)
 		{
 			Debug.Log("GAME OVER");
 			Destroy(gameObject, 1);
-			uiUpdater.SetGameOver();
-            //finish demo
-            //go to some menu-scene
-            //SceneManager.LoadScene(0-2);?
-        }
+			//finish demo
+			uiUpdater.SetGameOver();// ABSTRACTION
+		}
 	}
-
 
 	//Manage COLLISIONS
 	private void OnTriggerEnter(Collider other)
 	{
 		//melee collisions between ships
 		if (other.gameObject.CompareTag("Enemy")){
-			//Debug.Log("Melee collision: " + gameObject.tag + " /other " + other.gameObject.tag);
+
 			var otherShip = other.gameObject.GetComponent<EnemyShip>();
-			//damage from other.gameObject to gameobject
 			ReceiveDamage(otherShip.p_meleeDamage); // ABSTRACTION
 		}
 

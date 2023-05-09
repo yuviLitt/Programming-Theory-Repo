@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// INHERITANCE
 public class MovingThing : MonoBehaviour
 {
 
@@ -11,40 +12,14 @@ public class MovingThing : MonoBehaviour
 	[SerializeField] protected float speed;
 	[SerializeField] protected float yLim; //8 aprox.
 
-	// ENCAPSULATION
 	//not change during game
-	public int p_meleeDamage{ get; private set; }
-	public float p_speed{ get; private set; }
+	public int p_meleeDamage{ get; private set; }// ENCAPSULATION
+	public float p_speed{ get; private set; }// ENCAPSULATION
 
 	protected UIStatsController uiUpdater;
 
-
-	//methods to override
-	//move forward
-	protected virtual void Move() {
-		transform.Translate(Vector3.up * Time.deltaTime * p_speed);
-	}
-
-	//control that object is out of screen bounds
-	protected virtual void PositionControl() {
-		//it goes from top to bottom - FUT maybe other paths
-		if (transform.position.y < -yLim
-			|| transform.position.y > yLim){
-			Destroy(gameObject);
-		}
-	}
-
-	// ABSTRACTION
-	//only time they are set
-	protected void InitValues()
+	protected virtual void Start() // POLYMORPHISM
 	{
-		p_meleeDamage = meleeDamage;
-		p_speed = speed;
-	}
-
-
-	protected virtual void Start(){
-		//Debug.Log("start moving thing");
 		InitValues();
 
 		//to update ui and game
@@ -53,14 +28,39 @@ public class MovingThing : MonoBehaviour
 
 	void Update()
 	{
-		if (uiUpdater.isPlaying){
+		if (uiUpdater.isPlaying)
+		{
 			//Manage movement
 			Move(); // ABSTRACTION
 
-            //Limit player to the screen
-            PositionControl(); // ABSTRACTION
-        }
+			//Limit player to the screen
+			PositionControl(); // ABSTRACTION
+		}
+	}
 
+
+	//methods to override
+	//move forward
+	protected virtual void Move()// POLYMORPHISM
+	{
+		transform.Translate(Vector3.up * Time.deltaTime * p_speed);
+	}
+
+	//control that object is out of screen bounds
+	protected virtual void PositionControl()// POLYMORPHISM
+	{
+		//it goes from top to bottom - FUT maybe other paths
+		if (transform.position.y < -yLim || transform.position.y > yLim){
+			Destroy(gameObject);
+		}
+	}
+
+	
+	//only time they are set
+	private void InitValues()// ABSTRACTION
+	{
+		p_meleeDamage = meleeDamage;
+		p_speed = speed;
 	}
 
 }

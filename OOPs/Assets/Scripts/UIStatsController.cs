@@ -12,9 +12,6 @@ public class UIStatsController : MonoBehaviour
 
 	private int enemiesKilled = 0;
 	private int score = 0;
-	//private int life;
-
-	//private PlayerShip player;
 
 	public bool isPlaying = false;
 
@@ -41,8 +38,8 @@ public class UIStatsController : MonoBehaviour
 
 	public void SetGameOver() {
 		isPlaying = false;
-        //go to some menu-scene
-        //SceneManager.LoadScene(0-2);?
+        //go to menu
+        SceneManager.LoadScene(0);
     }
 
 
